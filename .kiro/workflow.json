@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "workflow": [
+    {
+      "id": "watch_screenshot_folder",
+      "name": "Watch Screenshot Folder",
+      "type": "file_system_trigger",
+      "config": {
+        "path": "C:/Users/Aditya/Pictures/Screenshots",
+        "event": "created"
+      }
+    },
+    {
+      "id": "run_auto_organizer",
+      "name": "Run Screenshot Organizer Script",
+      "type": "run_script",
+      "config": {
+        "script": "organize_screenshots.py",
+        "runtime": "python3"
+      }
+    }
+  ]
+}
