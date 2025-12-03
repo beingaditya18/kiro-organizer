@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Explicitly include the Kiro directory for the challenge
+!.kiro/
